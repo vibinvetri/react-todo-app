@@ -6,15 +6,6 @@ A minimalistic, customisable todo app.
 
 - Demo hosted on Netlify: [https://react-todo-list-9.netlify.app/](https://react-todo-list-9.netlify.app/)
 
-## Features
-
-- Dark mode
-- Drag n drop tasks to reorder them
-- Tasks saved locally
-- Customisable task color
-- Edit task
-- Notification Box
-- Tablet & mobile friendly
 
 ## Built with
 
@@ -26,10 +17,6 @@ A minimalistic, customisable todo app.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
 
-## Author
-
-- Instagram - [@ilyasbelaoud](https://www.instagram.com/ilyasbelaoud)
-- Twitter - [@ilyasbelaoud](https://www.twitter.com/ilyasbelaoud)
 
 ## Instructions
 
