@@ -25,6 +25,8 @@ const App = () => {
     setFilter,
     isColorsOpen,
     setIsColorsOpen,
+    setSearch,
+    search
   } = useGlobalContext();
 
   const addTask = (e) => {
@@ -83,7 +85,19 @@ const App = () => {
     if (e.target.classList.contains("btn-colors")) return;
     setIsColorsOpen(false);
   };
-
+  console.log('search',search)
+  const searchFunction=()=>{
+    console.log('e',search)
+    const key=search
+    console.log('tasks',tasks)
+    let filterResult=tasks.filter((item)=>{
+      if(item.name==key){
+        return item
+      }
+    
+    })
+    setTasks(filterResult)
+  }
   return (
   <>
     <div className='container' onClick={hideColorsContainer}>
@@ -99,6 +113,15 @@ const App = () => {
         />
         <button type='submit'>{isEditing ? "Edit" : "Add"}</button>
       </form>
+      <input
+      className='head2'
+          type='text'
+          ref={inputRef}
+          placeholder='search'
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button type="button" onClick={searchFunction}>Search</button>
       <div className='filter'>
         <button
           data-filter='all'

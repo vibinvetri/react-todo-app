@@ -14,6 +14,7 @@ const AppProvider = ({ children }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
   const [name, setName] = useState("");
+  const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
   const [isColorsOpen, setIsColorsOpen] = useState(false);
   const [location, setLocation] = useState({});
@@ -77,6 +78,8 @@ const AppProvider = ({ children }) => {
         isColorsOpen,
         setIsColorsOpen,
         showColors,
+        search,
+        setSearch
       }}
     >
       {children}
